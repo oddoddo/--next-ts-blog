@@ -1,4 +1,3 @@
-import PostItem from '@/components/post/PostItem'
 import PostList from '@/components/post/PostList'
 import React from 'react'
 

@@ -10,7 +10,6 @@ class MyDocument extends Document {
                 <body>
                     <Main />
                     <NextScript />
-                    dddddd
                 </body>
             </Html>
         )

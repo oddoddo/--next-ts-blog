@@ -16,16 +16,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 // 동적 경로 데이터 생성 함수
-
-// GetStaticProps는 2개의 인자를 받음
-// 첫 번째 인자는 페이지 컴포넌트의 props로 전달될 값
-// 두 번째 인자는 페이지 경로의 params를 받음
-
-// getStaticProps 함수의 첫 번째 인자로 params가 전달됨
-// params는 getStaticPaths 함수에서 생성한 경로의 params를 가지고 있음
-// params.id로 접근해서 id 값을 가져올 수 있음
-// id 값으로 해당 포스트를 찾아서 props로 전달
-
 export const getStaticProps: GetStaticProps<PostProps, { id: string }> = async ({ params }) => {
     const post = posts.find((post) => post.id === Number(params?.id))
 

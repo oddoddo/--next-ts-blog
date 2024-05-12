@@ -10,9 +10,7 @@ const PostItem = ({ post }: PostProps) => {
     return (
         <div className={styles.post}>
             <h2 className={styles.postTitle}>
-                <Link href={`/post/${post.id}`}>
-                    <span>{post.title}</span>
-                </Link>
+                <Link href={`/post/${post.id}`}>{post.title}</Link>
             </h2>
             <p className={styles.postContent}>{post.content}</p>
             <ul className={styles.postTags}>
